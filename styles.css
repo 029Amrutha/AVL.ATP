@@ -1,0 +1,258 @@
+/* Reset default margin and padding */
+body, html {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Style the fullscreen container */
+.fullscreen-image {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 100% viewport height */
+    overflow: hidden;
+}
+
+/* Style the image to cover the whole container */
+.fullscreen-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Style the overlay with information */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Style the text within the overlay */
+.overlay h1, .overlay p {
+    margin: 0;
+    padding: 10px;
+}
+.upper-right-button {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#slider-image {
+    width: 100%;
+}
+
+.slider-navigation {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nav-button {
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.section-blue {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    height: 10%;
+}
+.section-green {
+    background-color: rgb(107, 220, 107);
+    color: white;
+    padding: 20px;
+    height: 10%;
+}
+
+.section-orange {
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    height: 10%;
+}
+
+
+
+
+
+.sections-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+  
+}
+
+.section {
+    flex: 1; /* Distribute available space evenly among sections */
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+
+
+
+.steps-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    text-align: center
+
+}
+
+.step-number {
+    width: 30px;
+    height: 30px;
+    background-color: #66cc99;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.step-content {
+    font-size: 20px;
+    color: black;
+    font:bold;
+}
+
+.step1 {
+    display: inline-block;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 80%;
+    max-width: fit-content;
+    font-size: 18px;
+    height: fit-content;
+    align-content: center;
+    text-align: left;
+    margin: 10px;
+}
+.sub-steps {
+    margin-top: 10px;
+}
+.sub-step {
+    margin-left: 40px;
+    color: #333;
+    font-size: medium;
+}
+.steps-container1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step2 {
+    flex: 1;
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+}
+
+.step-number1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    color: #66cc99;
+    border-radius: 50%;
+    display: flex;
+}
+
+.step-content1 {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.flow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+   
+}
+
+
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgb(78, 121, 237);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: flowSteps 2s ease-out;
+    font-size: larger;
+}
+
+.sub-step {
+    margin-left: 40px;
+    color: black;
+    animation: flowSteps 3s ease-out;
+    font-size: larger;
+}
+
+
+.step-number {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    color: #66cc99;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.step-text {
+    color: black; /* Adding color to the text */
+}
+
+@keyframes flowSteps {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Rest of your CSS styles */
