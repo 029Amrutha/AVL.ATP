@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head> 
-
-    
-    <section class="section-green"><h1><center>COMMISSIONING</center></h1></section>
-</head>
-
-    <h2><center>Prerequisite</center></h2>
+<head>
     <style>
         .section-green {
-    background-color: rgb(102, 123, 200);
-    color: white;
-    padding: 20px;
-    height: 10%;
-}
+            background-color: rgb(102, 123, 200);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
         .sections-containerP {
             display: flex;
             justify-content: space-between;
+            text-align: center;
         }
-        
+
         .sectionP {
             flex: 1;
             text-align: center;
@@ -34,54 +30,7 @@
             padding: 10px;
             font-size: x-large;
         }
-    </style>
 
-
-<body>
-    
-    <div class="sections-containerP">
-        <div class="sectionP">
-            <div class="section-headerP" >1. Component TESTING</div>
-             <P><label for="components">Choose a component :</label>
-                <select id="components" name="components">
-                    <option value="Pressure test">Pressure test</option>
-                    <option value="water installed">water installed</option>
-                    <option value="option 3">option 3</option>
-                </select></P>
-            <p><a href="contact.html#Request Component">Request personnel</a></p>
-        </div>
-
-        <div class="sectionP">
-            <div class="section-headerP" style="background-color: #ff9999;">2. MTR/DGUV</div>
-            <p> Successful</p>
-            
-            <p>Start ATP</p>
-            <p> Not successful  <a href="contact.html">REPORT</a></p>
-        </div>
-
-    </div>
-    <!--<p>Check all components at commissioning area</p>
-    <title>ATP</title>
-    <label for="components">Choose a component :</label>
-
-    
-    <select id="components" name="components">
-        <option value="Pressure test">Pressure test</option>
-        <option value="water installed">water installed</option>
-        <option value="option 3">option 3</option>
-    </select>
-   
-    
-    <p>More information about commissioning...</p>
-            <p>successful-------Start ATP</p>
-            <P> Not successful </p>
-            <button<p><a href= "contact.html">REPORT</a></button>
-        </div>
-         Add more options here -->
-    
-    
-
-    <style>
         .procedure-container {
             display: flex;
             flex-direction: column;
@@ -100,11 +49,10 @@
         .step:nth-child(odd) {
             background-color: #8b86ec;
         }
+
         .step:nth-child(even) {
             background-color: #85dea0;
         }
-
-        
 
         .step:last-child:before {
             display: none;
@@ -115,57 +63,74 @@
             margin-bottom: 18px;
         }
     </style>
-
+</head>
 <body>
+    <section class="section-green">
+        <h1>COMMISSIONING</h1>
+    </section>
+
+    <h2><center>Prerequisite</center></h2>
+
+    <div class="sections-containerP">
+        <div class="sectionP">
+            <div class="section-headerP">1. Component TESTING</div>
+            <p><label for="components">Choose a component :</label>
+                <select id="components" name="components">
+                    <option value="Pressure test">Pressure test</option>
+                    <option value="water installed">water installed</option>
+                    <option value="option 3">option 3</option>
+                </select></p>
+            <p><a href="contact.html#Request Component">Request personnel</a></p>
+        </div>
+
+        <div class="sectionP">
+            <div class="section-headerP" style="background-color: #ff9999;">2. MTR/DGUV</div>
+            <p> Successful</p>
+            <p>Start ATP</p>
+            <p> Not successful  <a href="contact.html">REPORT</a></p>
+        </div>
+    </div>
+
     <div class="procedure-container">
         <div class="step">
             <div class="step-title">Start ATP</div>
             <p><a href="./Documents.html">Access</a></p>
             <p>error occured <a href= "contact.html">REPORT</a></p>
             <label for="failure">Type of failure :</label>
-    
-                    <select id="failure" name="failure">
-                        <option value="ATP failure">ATP failure</option>
-                        <option value="Production failure">Production failure</option>
-                        <option value="OTHER">Other</option>
-                    </select>
-            
+            <select id="failure" name="failure">
+                <option value="ATP failure">ATP failure</option>
+                <option value="Production failure">Production failure</option>
+                <option value="OTHER">Other</option>
+            </select>
         </div>
         <div class="step">
             <div class="step-title">Troubleshooting</div>
             <p><a href="Lorem_ipsum.pdf.pdf">Link to Document 3</a></p>
             <p><a href="Documents.html">Link to CANape doc</a></p>
-            
         </div>
         <div class="step">
             <div class="step-title">ATP is finished</div>
             <p><a href="Lorem_ipsum.pdf.pdf">create</a></p>
             <p><a href="Documents.html">store</a></p>
             <p><a href="Documents.html">update</a></p>
-            
         </div>
         <div class="step">
             <div class="step-title">Flashing Software</div>
             <p><a href="Lorem_ipsum.pdf.pdf">Guidelines</a></p>
-        
         </div>
         <div class="step">
             <div class="step-title">Share Knowledge</div>
             <p><a href="Contact.html">Report to Production</a></p>
             <p><a href="https://jira.avl.com/its/secure/WelcomeToJIRA.jspa">Create a jira ticket</a></p>
-            
         </div>
     </div>
 
     <button onclick="goBack()">Go Back</button>
 
-    
-<script>
-    function goBack() {
-        window.history.back();
-    }
-</script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 </html>
-
-
