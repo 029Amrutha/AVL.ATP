@@ -8,11 +8,7 @@
     </section>
 </head>
 <body>
-    <label for="Department">Choose a Department:</label>
-    
-
-
-    
+    <label for="Department">Choose a Department:</label>   
     <select id="Department">
         <option value="Development">Development</option>
         <option value="Production">Production</option>
@@ -231,33 +227,22 @@
     </div>
     </div>
     </div>
-    <script>
-        const dropdown = document.getElementById('sectionDropdown');
-        dropdown.addEventListener('change', () => {
-            const selectedValue = dropdown.value;
-            const section = document.getElementById(selectedValue);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    </script>
-    <script>
-        const dropdown = document.getElementById('Department');
-        dropdown.addEventListener('change', () => {
-            const selectedValue = dropdown.value;
-            const section = document.getElementById(selectedValue);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    </script>
 
+        
     <button onclick="goBack()">Go Back</button>
 
     <script>
         function goBack() {
             window.history.back();
         }
+    const dropdown = document.getElementById('Department');
+        dropdown.addEventListener('change', () => {
+            const selectedValue = dropdown.value;
+            const section = document.getElementById(selectedValue);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
     </script>
 </body>
-</html
+</html>
