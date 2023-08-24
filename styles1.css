@@ -21,7 +21,7 @@ header {
 }
 
 /* Styles for mobile devices */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 650px) {
     /* Your CSS rules here */
 }
 
