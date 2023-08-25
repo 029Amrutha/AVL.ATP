@@ -8,17 +8,20 @@
     </section>
 </head>
 <body>
-    <label for="Department">Choose a Department:</label>   
-    <select id="Department">
-        <option value="Development">Development</option>
-        <option value="Production">Production</option>
-        <option value="Application support">Application support</option>
-        <option value="Quality management">Quality management</option>
-        <option value="Request component">Request component</option>
 
+
+    <label for="sectionDropdown">Choose a Section:</label>
+    <select id="sectionDropdown">
+        <option value="section1">Production</option>
+        <option value="section2">Application support</option>
+        <option value="section3">Quality management</option>
+        <option value="section4">Request component</option>
+        <option value="section5">Section 5</option>
     </select>
+
+
     <h2>DEVELOPMENT</h2>
-    <div class="section" id="Development"></div>
+    <div class="section" id="section1"></div>
  
     <div class="steps-container">
     <div class="step1">
@@ -64,6 +67,7 @@
 </div>
 
     <h2>PRODUCTION</h2>
+    <div class="section" id="section2"></div>
     <div class="steps-container">
         <div class="step1">
             <div class="step-number">1</div>
@@ -105,6 +109,7 @@
 </div>
 </div>
     <h2>QUALITY MANAGEMENT</h2>
+    <div class="section" id="section3"></div>
     <div class="steps-container">
         <div class="step1">
             <div class="step-number">1</div>
@@ -146,6 +151,7 @@
 </div>
 </div>
 <h2>APPLICATION CUSTOMER SUPPORT</h2>
+<div class="section" id="section4"></div>
     <div class="steps-container">
         <div class="step1">
             <div class="step-number">1</div>
@@ -187,6 +193,7 @@
 </div>
 </div>
     <h2>Request Component</h2>
+    <div class="section" id="section5"></div>
     <div class="steps-container">
         <div class="step1">
             <div class="step-number">1</div>
@@ -227,22 +234,26 @@
     </div>
     </div>
     </div>
+    <script>
+        const dropdown = document.getElementById('sectionDropdown');
+        dropdown.addEventListener('change', () => {
+            const selectedValue = dropdown.value;
+            const section = document.getElementById(selectedValue);
+            if (section) {
+                window.scrollTo({
+                    top: section.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    </script>
 
-        
     <button onclick="goBack()">Go Back</button>
 
     <script>
         function goBack() {
             window.history.back();
         }
-    const dropdown = document.getElementById('Department');
-        dropdown.addEventListener('change', () => {
-            const selectedValue = dropdown.value;
-            const section = document.getElementById(selectedValue);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
     </script>
 </body>
-</html>
+</html
